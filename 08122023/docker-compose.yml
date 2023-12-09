@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "9090:80"
+    volumes:
+      - nginx-data:/var/opt/nginx
+
+volumes:
+  nginx-data:
